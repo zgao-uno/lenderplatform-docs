@@ -1,0 +1,278 @@
+\hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao}{}\doxysection{com.\+wecareinsurance.\+dao.\+Customer\+Dao Class Reference}
+\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao}\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a399966b226f2928a53aa05c013fdc042}{Customer\+Dao}} ()  throws SQLException, Class\+Not\+Found\+Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ab8183ffe1f3f43224d45760d13ab3863}{get\+Customer}} ()  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_aff8d432bdc9f6a7bea7e92ca7351abb4}{get\+Customer\+By\+Id}} (String id)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a008246a7b58974632999c41802c1efd5}{get\+Customer\+By\+UId}} (String id)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ae3c5c31f77fc93ea1e67baf93d50923d}{get\+Pending}} (String id)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ad43ed957dc403990c90b44eb0c587d73}{get\+Customer\+By\+Vin}} (String vin)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a553b0d2102072ad9c9b21ca0ab94eb4f}{create\+Customer}} (String uid, String lid, String ln, String fn, String a1, String a2, String city, String state, String zip, String email, String phone, String vin, Date date, String status)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a5aa4c05d1a0e2f851c6e1aee7194c256}{delete\+Customer}} (String id)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ac571a17362b7edada57ca02fb5084c15}{update\+Customer}} (String cid, String ln, String fn, String a1, String a2, String city, String state, String zip, String email, String phone, String vin)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_adcb6a7d027e8792b48c5a79f26d34a2a}{update\+Customer\+Status}} (String cid, String type)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_aeb6632816530c22c662fdf9f0bba914b}{update\+Customer\+Date}} (String cid, Date date)  throws Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+customer dao class
+
+
+\begin{DoxyParams}{Parameters}
+{\em DB\+\_\+\+USERNAME} & DB user name \\
+\hline
+{\em DB\+\_\+\+PASSWORD} & DB password \\
+\hline
+{\em DB\+\_\+\+URL} & DB URL \\
+\hline
+{\em TABLE} & DB table name \\
+\hline
+{\em Database\+Access} & db database file \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a399966b226f2928a53aa05c013fdc042}\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a399966b226f2928a53aa05c013fdc042}} 
+\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}!CustomerDao@{CustomerDao}}
+\index{CustomerDao@{CustomerDao}!com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsubsection{\texorpdfstring{CustomerDao()}{CustomerDao()}}
+{\footnotesize\ttfamily com.\+wecareinsurance.\+dao.\+Customer\+Dao.\+Customer\+Dao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws SQLException, Class\+Not\+Found\+Exception}
+
+get database connection
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a553b0d2102072ad9c9b21ca0ab94eb4f}\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a553b0d2102072ad9c9b21ca0ab94eb4f}} 
+\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}!createCustomer@{createCustomer}}
+\index{createCustomer@{createCustomer}!com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsubsection{\texorpdfstring{createCustomer()}{createCustomer()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+dao.\+Customer\+Dao.\+create\+Customer (\begin{DoxyParamCaption}\item[{String}]{uid,  }\item[{String}]{lid,  }\item[{String}]{ln,  }\item[{String}]{fn,  }\item[{String}]{a1,  }\item[{String}]{a2,  }\item[{String}]{city,  }\item[{String}]{state,  }\item[{String}]{zip,  }\item[{String}]{email,  }\item[{String}]{phone,  }\item[{String}]{vin,  }\item[{Date}]{date,  }\item[{String}]{status }\end{DoxyParamCaption}) throws Exception}
+
+create customer
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\textquotesingle{}s} & information from front end \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+customer\textquotesingle{}s id 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a5aa4c05d1a0e2f851c6e1aee7194c256}\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a5aa4c05d1a0e2f851c6e1aee7194c256}} 
+\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}!deleteCustomer@{deleteCustomer}}
+\index{deleteCustomer@{deleteCustomer}!com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsubsection{\texorpdfstring{deleteCustomer()}{deleteCustomer()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+dao.\+Customer\+Dao.\+delete\+Customer (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption}) throws Exception}
+
+delete customer by customer\textquotesingle{}s id
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & customer\textquotesingle{}s id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \textquotesingle{}deleted\textquotesingle{} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ab8183ffe1f3f43224d45760d13ab3863}\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ab8183ffe1f3f43224d45760d13ab3863}} 
+\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}!getCustomer@{getCustomer}}
+\index{getCustomer@{getCustomer}!com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsubsection{\texorpdfstring{getCustomer()}{getCustomer()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+dao.\+Customer\+Dao.\+get\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+get every customer from DB
+
+\begin{DoxyReturn}{Returns}
+customer list 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_aff8d432bdc9f6a7bea7e92ca7351abb4}\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_aff8d432bdc9f6a7bea7e92ca7351abb4}} 
+\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}!getCustomerById@{getCustomerById}}
+\index{getCustomerById@{getCustomerById}!com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsubsection{\texorpdfstring{getCustomerById()}{getCustomerById()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+dao.\+Customer\+Dao.\+get\+Customer\+By\+Id (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption}) throws Exception}
+
+get customer by id
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & customer\textquotesingle{}s id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+customer list 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a008246a7b58974632999c41802c1efd5}\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_a008246a7b58974632999c41802c1efd5}} 
+\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}!getCustomerByUId@{getCustomerByUId}}
+\index{getCustomerByUId@{getCustomerByUId}!com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsubsection{\texorpdfstring{getCustomerByUId()}{getCustomerByUId()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+dao.\+Customer\+Dao.\+get\+Customer\+By\+UId (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption}) throws Exception}
+
+get customer by user\textquotesingle{}s id
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & user\textquotesingle{}s id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+customer list 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ad43ed957dc403990c90b44eb0c587d73}\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ad43ed957dc403990c90b44eb0c587d73}} 
+\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}!getCustomerByVin@{getCustomerByVin}}
+\index{getCustomerByVin@{getCustomerByVin}!com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsubsection{\texorpdfstring{getCustomerByVin()}{getCustomerByVin()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+dao.\+Customer\+Dao.\+get\+Customer\+By\+Vin (\begin{DoxyParamCaption}\item[{String}]{vin }\end{DoxyParamCaption}) throws Exception}
+
+get customer by vin
+
+
+\begin{DoxyParams}{Parameters}
+{\em vin} & customer\textquotesingle{}s vin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+customer list 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ae3c5c31f77fc93ea1e67baf93d50923d}\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ae3c5c31f77fc93ea1e67baf93d50923d}} 
+\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}!getPending@{getPending}}
+\index{getPending@{getPending}!com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsubsection{\texorpdfstring{getPending()}{getPending()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+dao.\+Customer\+Dao.\+get\+Pending (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption}) throws Exception}
+
+get pending list\+: customer with F status
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & user\textquotesingle{}s id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+customer list 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ac571a17362b7edada57ca02fb5084c15}\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_ac571a17362b7edada57ca02fb5084c15}} 
+\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}!updateCustomer@{updateCustomer}}
+\index{updateCustomer@{updateCustomer}!com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsubsection{\texorpdfstring{updateCustomer()}{updateCustomer()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+dao.\+Customer\+Dao.\+update\+Customer (\begin{DoxyParamCaption}\item[{String}]{cid,  }\item[{String}]{ln,  }\item[{String}]{fn,  }\item[{String}]{a1,  }\item[{String}]{a2,  }\item[{String}]{city,  }\item[{String}]{state,  }\item[{String}]{zip,  }\item[{String}]{email,  }\item[{String}]{phone,  }\item[{String}]{vin }\end{DoxyParamCaption}) throws Exception}
+
+update customer by customer\textquotesingle{}s id
+
+
+\begin{DoxyParams}{Parameters}
+{\em updated} & information from front end \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \textquotesingle{}updated\textquotesingle{} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_aeb6632816530c22c662fdf9f0bba914b}\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_aeb6632816530c22c662fdf9f0bba914b}} 
+\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}!updateCustomerDate@{updateCustomerDate}}
+\index{updateCustomerDate@{updateCustomerDate}!com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsubsection{\texorpdfstring{updateCustomerDate()}{updateCustomerDate()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+dao.\+Customer\+Dao.\+update\+Customer\+Date (\begin{DoxyParamCaption}\item[{String}]{cid,  }\item[{Date}]{date }\end{DoxyParamCaption}) throws Exception}
+
+update customer date by customer\textquotesingle{}s id
+
+
+\begin{DoxyParams}{Parameters}
+{\em cid} & customer id \\
+\hline
+{\em date} & policy date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \textquotesingle{}updated\textquotesingle{} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_adcb6a7d027e8792b48c5a79f26d34a2a}\label{classcom_1_1wecareinsurance_1_1dao_1_1_customer_dao_adcb6a7d027e8792b48c5a79f26d34a2a}} 
+\index{com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}!updateCustomerStatus@{updateCustomerStatus}}
+\index{updateCustomerStatus@{updateCustomerStatus}!com.wecareinsurance.dao.CustomerDao@{com.wecareinsurance.dao.CustomerDao}}
+\doxysubsubsection{\texorpdfstring{updateCustomerStatus()}{updateCustomerStatus()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+dao.\+Customer\+Dao.\+update\+Customer\+Status (\begin{DoxyParamCaption}\item[{String}]{cid,  }\item[{String}]{type }\end{DoxyParamCaption}) throws Exception}
+
+update customer status by customer\textquotesingle{}s id
+
+
+\begin{DoxyParams}{Parameters}
+{\em cid} & customer id \\
+\hline
+{\em type} & status type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \textquotesingle{}updated\textquotesingle{} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/wecareinsurance/dao/Customer\+Dao.\+java\end{DoxyCompactItemize}

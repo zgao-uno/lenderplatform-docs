@@ -1,0 +1,46 @@
+\hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_verify_v_i_n}{}\doxysection{com.\+wecareinsurance.\+services.\+Verify\+VIN Class Reference}
+\label{classcom_1_1wecareinsurance_1_1services_1_1_verify_v_i_n}\index{com.wecareinsurance.services.VerifyVIN@{com.wecareinsurance.services.VerifyVIN}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1services_1_1_verify_v_i_n_a1dea484925437d57680676b27f6936d6}{is\+Vin\+Valid}} (String vin)  throws SAXException, IOException, Parser\+Configuration\+Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to verify vin numbers
+
+\begin{DoxyAuthor}{Author}
+Dominic Fernandez, Toe Arkar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_verify_v_i_n_a1dea484925437d57680676b27f6936d6}\label{classcom_1_1wecareinsurance_1_1services_1_1_verify_v_i_n_a1dea484925437d57680676b27f6936d6}} 
+\index{com.wecareinsurance.services.VerifyVIN@{com.wecareinsurance.services.VerifyVIN}!isVinValid@{isVinValid}}
+\index{isVinValid@{isVinValid}!com.wecareinsurance.services.VerifyVIN@{com.wecareinsurance.services.VerifyVIN}}
+\doxysubsubsection{\texorpdfstring{isVinValid()}{isVinValid()}}
+{\footnotesize\ttfamily boolean com.\+wecareinsurance.\+services.\+Verify\+VIN.\+is\+Vin\+Valid (\begin{DoxyParamCaption}\item[{String}]{vin }\end{DoxyParamCaption}) throws SAXException, IOException, Parser\+Configuration\+Exception}
+
+Validates a vin number using vpic.\+nhtsa.\+dot.\+gov API 
+\begin{DoxyParams}{Parameters}
+{\em vin} & The vin number to validate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if valid, false otherwise 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em SAXException} & Throws if XML is invalid \\
+\hline
+{\em IOException} & Throws if response could not be read from connection stream \\
+\hline
+{\em Parser\+Configuration\+Exception} & Throws if XSML parser could not be configured \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/wecareinsurance/services/Verify\+VIN.\+java\end{DoxyCompactItemize}

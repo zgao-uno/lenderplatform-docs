@@ -1,0 +1,112 @@
+\hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao}{}\doxysection{com.\+wecareinsurance.\+dao.\+User\+Dao Class Reference}
+\label{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao}\index{com.wecareinsurance.dao.UserDao@{com.wecareinsurance.dao.UserDao}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_a8b69229abb95f2cc6b2d7bfb091f82a6}{User\+Dao}} ()  throws SQLException, Class\+Not\+Found\+Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_ac480b6110ea0ce78e2b6bc6f1df57f90}{get\+User}} (String email, String password)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_a79907518c4d0075bba32284e6d4c5776}{get\+User}} (String email)
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_af0121c638f79aa9b2f3f85b1df2b9938}{create\+User}} (\mbox{\hyperlink{classcom_1_1wecareinsurance_1_1models_1_1_user}{User}} u)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_af01a26f238e5b0b69b307a16b49dad92}{update}} (\mbox{\hyperlink{classcom_1_1wecareinsurance_1_1models_1_1_user}{User}} u)  throws Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_a8b69229abb95f2cc6b2d7bfb091f82a6}\label{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_a8b69229abb95f2cc6b2d7bfb091f82a6}} 
+\index{com.wecareinsurance.dao.UserDao@{com.wecareinsurance.dao.UserDao}!UserDao@{UserDao}}
+\index{UserDao@{UserDao}!com.wecareinsurance.dao.UserDao@{com.wecareinsurance.dao.UserDao}}
+\doxysubsubsection{\texorpdfstring{UserDao()}{UserDao()}}
+{\footnotesize\ttfamily com.\+wecareinsurance.\+dao.\+User\+Dao.\+User\+Dao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws SQLException, Class\+Not\+Found\+Exception}
+
+constructor of \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao}{User\+Dao}} 
+\begin{DoxyExceptions}{Exceptions}
+{\em SQLException} & \\
+\hline
+{\em Class\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_af0121c638f79aa9b2f3f85b1df2b9938}\label{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_af0121c638f79aa9b2f3f85b1df2b9938}} 
+\index{com.wecareinsurance.dao.UserDao@{com.wecareinsurance.dao.UserDao}!createUser@{createUser}}
+\index{createUser@{createUser}!com.wecareinsurance.dao.UserDao@{com.wecareinsurance.dao.UserDao}}
+\doxysubsubsection{\texorpdfstring{createUser()}{createUser()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+dao.\+User\+Dao.\+create\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1wecareinsurance_1_1models_1_1_user}{User}}}]{u }\end{DoxyParamCaption}) throws Exception}
+
+Create user in database based on the information tha pass form User\+Controller 
+\begin{DoxyParams}{Parameters}
+{\em u} & user information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uid for User that just create 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_a79907518c4d0075bba32284e6d4c5776}\label{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_a79907518c4d0075bba32284e6d4c5776}} 
+\index{com.wecareinsurance.dao.UserDao@{com.wecareinsurance.dao.UserDao}!getUser@{getUser}}
+\index{getUser@{getUser}!com.wecareinsurance.dao.UserDao@{com.wecareinsurance.dao.UserDao}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+dao.\+User\+Dao.\+get\+User (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+find specific user from database. 
+\begin{DoxyParams}{Parameters}
+{\em email} & user email \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user\textquotesingle{}s information 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_ac480b6110ea0ce78e2b6bc6f1df57f90}\label{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_ac480b6110ea0ce78e2b6bc6f1df57f90}} 
+\index{com.wecareinsurance.dao.UserDao@{com.wecareinsurance.dao.UserDao}!getUser@{getUser}}
+\index{getUser@{getUser}!com.wecareinsurance.dao.UserDao@{com.wecareinsurance.dao.UserDao}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+dao.\+User\+Dao.\+get\+User (\begin{DoxyParamCaption}\item[{String}]{email,  }\item[{String}]{password }\end{DoxyParamCaption}) throws Exception}
+
+find specific user from database. 
+\begin{DoxyParams}{Parameters}
+{\em email} & user email \\
+\hline
+{\em password} & user password \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user\textquotesingle{}s information 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_af01a26f238e5b0b69b307a16b49dad92}\label{classcom_1_1wecareinsurance_1_1dao_1_1_user_dao_af01a26f238e5b0b69b307a16b49dad92}} 
+\index{com.wecareinsurance.dao.UserDao@{com.wecareinsurance.dao.UserDao}!update@{update}}
+\index{update@{update}!com.wecareinsurance.dao.UserDao@{com.wecareinsurance.dao.UserDao}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+dao.\+User\+Dao.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1wecareinsurance_1_1models_1_1_user}{User}}}]{u }\end{DoxyParamCaption}) throws Exception}
+
+update user information in database 
+\begin{DoxyParams}{Parameters}
+{\em u} & user information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+id for User that just update 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/wecareinsurance/dao/User\+Dao.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,136 @@
+\hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao}{}\doxysection{com.\+wecareinsurance.\+dao.\+Lender\+Dao Class Reference}
+\label{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao}\index{com.wecareinsurance.dao.LenderDao@{com.wecareinsurance.dao.LenderDao}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_a37eb3cb0c5179341e8de94d317ef8959}{Lender\+Dao}} ()  throws SQLException, Class\+Not\+Found\+Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_aeed21fc7deedf401ffc4808b1c8ceeec}{get\+Lender}} ()  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_af82a8897bec9714b6d27eb25fa98e09b}{create\+Lender}} (String uid, String name, String type, String a1, String a2, String city, String state, String zip, int deductible)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_a2e48d29b6eaff187fd955b1bb2e35c9b}{get\+Lender\+By\+Id}} (String id)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_a4735bb7a1f122458c289bbc85229791b}{get\+Lender\+By\+UId}} (String id)  throws Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+lender dao class
+
+
+\begin{DoxyParams}{Parameters}
+{\em DB\+\_\+\+USERNAME} & DB user name \\
+\hline
+{\em DB\+\_\+\+PASSWORD} & DB password \\
+\hline
+{\em DB\+\_\+\+URL} & DB URL \\
+\hline
+{\em TABLE} & DB table name \\
+\hline
+{\em Database\+Access} & db database file \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_a37eb3cb0c5179341e8de94d317ef8959}\label{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_a37eb3cb0c5179341e8de94d317ef8959}} 
+\index{com.wecareinsurance.dao.LenderDao@{com.wecareinsurance.dao.LenderDao}!LenderDao@{LenderDao}}
+\index{LenderDao@{LenderDao}!com.wecareinsurance.dao.LenderDao@{com.wecareinsurance.dao.LenderDao}}
+\doxysubsubsection{\texorpdfstring{LenderDao()}{LenderDao()}}
+{\footnotesize\ttfamily com.\+wecareinsurance.\+dao.\+Lender\+Dao.\+Lender\+Dao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws SQLException, Class\+Not\+Found\+Exception}
+
+get database connection
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_af82a8897bec9714b6d27eb25fa98e09b}\label{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_af82a8897bec9714b6d27eb25fa98e09b}} 
+\index{com.wecareinsurance.dao.LenderDao@{com.wecareinsurance.dao.LenderDao}!createLender@{createLender}}
+\index{createLender@{createLender}!com.wecareinsurance.dao.LenderDao@{com.wecareinsurance.dao.LenderDao}}
+\doxysubsubsection{\texorpdfstring{createLender()}{createLender()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+dao.\+Lender\+Dao.\+create\+Lender (\begin{DoxyParamCaption}\item[{String}]{uid,  }\item[{String}]{name,  }\item[{String}]{type,  }\item[{String}]{a1,  }\item[{String}]{a2,  }\item[{String}]{city,  }\item[{String}]{state,  }\item[{String}]{zip,  }\item[{int}]{deductible }\end{DoxyParamCaption}) throws Exception}
+
+create lender
+
+
+\begin{DoxyParams}{Parameters}
+{\em lender\textquotesingle{}s} & information from front end \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lender\textquotesingle{}s id 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_aeed21fc7deedf401ffc4808b1c8ceeec}\label{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_aeed21fc7deedf401ffc4808b1c8ceeec}} 
+\index{com.wecareinsurance.dao.LenderDao@{com.wecareinsurance.dao.LenderDao}!getLender@{getLender}}
+\index{getLender@{getLender}!com.wecareinsurance.dao.LenderDao@{com.wecareinsurance.dao.LenderDao}}
+\doxysubsubsection{\texorpdfstring{getLender()}{getLender()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+dao.\+Lender\+Dao.\+get\+Lender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+get every lender from DB
+
+\begin{DoxyReturn}{Returns}
+lender list 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_a2e48d29b6eaff187fd955b1bb2e35c9b}\label{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_a2e48d29b6eaff187fd955b1bb2e35c9b}} 
+\index{com.wecareinsurance.dao.LenderDao@{com.wecareinsurance.dao.LenderDao}!getLenderById@{getLenderById}}
+\index{getLenderById@{getLenderById}!com.wecareinsurance.dao.LenderDao@{com.wecareinsurance.dao.LenderDao}}
+\doxysubsubsection{\texorpdfstring{getLenderById()}{getLenderById()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+dao.\+Lender\+Dao.\+get\+Lender\+By\+Id (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption}) throws Exception}
+
+get lender by id
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & lender\textquotesingle{}s id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lender list 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_a4735bb7a1f122458c289bbc85229791b}\label{classcom_1_1wecareinsurance_1_1dao_1_1_lender_dao_a4735bb7a1f122458c289bbc85229791b}} 
+\index{com.wecareinsurance.dao.LenderDao@{com.wecareinsurance.dao.LenderDao}!getLenderByUId@{getLenderByUId}}
+\index{getLenderByUId@{getLenderByUId}!com.wecareinsurance.dao.LenderDao@{com.wecareinsurance.dao.LenderDao}}
+\doxysubsubsection{\texorpdfstring{getLenderByUId()}{getLenderByUId()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+dao.\+Lender\+Dao.\+get\+Lender\+By\+UId (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption}) throws Exception}
+
+get lender by user\textquotesingle{}s id
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & user\textquotesingle{}s id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lender list 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/wecareinsurance/dao/Lender\+Dao.\+java\end{DoxyCompactItemize}

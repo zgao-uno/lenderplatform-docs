@@ -1,0 +1,61 @@
+\hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_address}{}\doxysection{com.\+wecareinsurance.\+services.\+Address Class Reference}
+\label{classcom_1_1wecareinsurance_1_1services_1_1_address}\index{com.wecareinsurance.services.Address@{com.wecareinsurance.services.Address}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_address_a1fe625f9fe580f6863b2bec6f3b4e510}\label{classcom_1_1wecareinsurance_1_1services_1_1_address_a1fe625f9fe580f6863b2bec6f3b4e510}} 
+{\bfseries Address} (String address1, String address2, String city, String state, String zip, String zip2)
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_address_a05933e970734ebbfa890716de5daa563}\label{classcom_1_1wecareinsurance_1_1services_1_1_address_a05933e970734ebbfa890716de5daa563}} 
+String {\bfseries get\+Address1} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_address_add64ae2e497c5ffeb34ccf13452d3965}\label{classcom_1_1wecareinsurance_1_1services_1_1_address_add64ae2e497c5ffeb34ccf13452d3965}} 
+String {\bfseries get\+Address2} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_address_a8dff780fea041204380d6ed8febf7b5b}\label{classcom_1_1wecareinsurance_1_1services_1_1_address_a8dff780fea041204380d6ed8febf7b5b}} 
+String {\bfseries get\+City} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_address_a550ad016da52c54a84729cddceba1910}\label{classcom_1_1wecareinsurance_1_1services_1_1_address_a550ad016da52c54a84729cddceba1910}} 
+String {\bfseries get\+State} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_address_ad5c3ccaa9267441144abc3fdfe53e455}\label{classcom_1_1wecareinsurance_1_1services_1_1_address_ad5c3ccaa9267441144abc3fdfe53e455}} 
+String {\bfseries get\+Zipcode} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_address_afafcf1643e03cc72fd0d11e146e6202d}\label{classcom_1_1wecareinsurance_1_1services_1_1_address_afafcf1643e03cc72fd0d11e146e6202d}} 
+String {\bfseries get\+Zipcode2} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_address_aaeb8bc8a68235ab34e11aae00566ae77}\label{classcom_1_1wecareinsurance_1_1services_1_1_address_aaeb8bc8a68235ab34e11aae00566ae77}} 
+String {\bfseries to\+String} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1services_1_1_address_ab2de744c88d0fee4ca0260e4b7cef090}{USPSEndpoint}} ()  throws Unsupported\+Encoding\+Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to validate an address using the USPS API
+
+\begin{DoxyAuthor}{Author}
+Dominic Fernandez, Toe Arkar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_address_ab2de744c88d0fee4ca0260e4b7cef090}\label{classcom_1_1wecareinsurance_1_1services_1_1_address_ab2de744c88d0fee4ca0260e4b7cef090}} 
+\index{com.wecareinsurance.services.Address@{com.wecareinsurance.services.Address}!USPSEndpoint@{USPSEndpoint}}
+\index{USPSEndpoint@{USPSEndpoint}!com.wecareinsurance.services.Address@{com.wecareinsurance.services.Address}}
+\doxysubsubsection{\texorpdfstring{USPSEndpoint()}{USPSEndpoint()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+services.\+Address.\+USPSEndpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Unsupported\+Encoding\+Exception}
+
+Calls the USPS endpoint to validate the address \begin{DoxyReturn}{Returns}
+A string representing a valid address or not 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Encoding\+Exception} & Throws if encoding fails \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/wecareinsurance/services/Address.\+java\end{DoxyCompactItemize}

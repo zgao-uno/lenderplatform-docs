@@ -1,0 +1,143 @@
+\hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util}{}\doxysection{com.\+wecareinsurance.\+jwt.\+JWTUtil Class Reference}
+\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util}\index{com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a77b30cacf9c24171921203c3f3fbff19}{set\+Header}} (String header)
+\item 
+void \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_aab409f52c1733834a2bd50887a8d14f5}{set\+Token\+Prefix}} (String token\+Prefix)
+\item 
+void \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a3227cfdceb0882a0a8d6059897efe163}{set\+Secret}} (String secret)
+\item 
+void \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a7842ffd73a78ad97a69e28355f368210}{set\+Expire\+Time}} (int expire\+Time\+Int)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_ac0219623234fe526e32a96adf4d8e3ec}{create\+Token}} (String sub)
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_afbd5deefc18ebab53fdf27da8ee31246}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_afbd5deefc18ebab53fdf27da8ee31246}} 
+static String {\bfseries get\+Subject} (String token)
+\item 
+static String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a1ff7b0385eb8657ce9b3bc7ee1e9cb03}{validate\+Token}} (String token)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a58919fecc4c8763ebae16f8e1f58e9a7}{is\+Need\+Update}} (String token)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a9c45897f129035e1f3ec1583d2144019}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a9c45897f129035e1f3ec1583d2144019}} 
+static String {\bfseries header}
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_af0b747a39e67c156945f9107ed5448f4}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_af0b747a39e67c156945f9107ed5448f4}} 
+static String {\bfseries token\+Prefix}
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a59b52a469cbd5500ebfb3d6c2dabb900}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a59b52a469cbd5500ebfb3d6c2dabb900}} 
+static String {\bfseries secret}
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_abfce7ea1acbd35cf1745d7630f7a84b1}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_abfce7ea1acbd35cf1745d7630f7a84b1}} 
+static long {\bfseries expire\+Time}
+\item 
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_adc43cfcf425e0287ff1089a9e6051fe5}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_adc43cfcf425e0287ff1089a9e6051fe5}} 
+static final String {\bfseries USER\+\_\+\+LOGIN\+\_\+\+TOKEN} = \char`\"{}USER\+\_\+\+LOGIN\+\_\+\+TOKEN\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+\+: Zekun Gao Format of JWT token：header.\+payload.\+signature header format（algorithm、token）,default：\{\char`\"{}alg\char`\"{}\+: \char`\"{}\+HS512\char`\"{},\char`\"{}typ\char`\"{}\+: \char`\"{}\+JWT\char`\"{}\} payload format settings：（user information, creation time, generation time） signature generation algorithm\+:： HMACSHA512(base64\+Url\+Encode(header) + \char`\"{}.\char`\"{} +base64\+Url\+Encode(payload),secret) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_ac0219623234fe526e32a96adf4d8e3ec}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_ac0219623234fe526e32a96adf4d8e3ec}} 
+\index{com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}!createToken@{createToken}}
+\index{createToken@{createToken}!com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}}
+\doxysubsubsection{\texorpdfstring{createToken()}{createToken()}}
+{\footnotesize\ttfamily static String com.\+wecareinsurance.\+jwt.\+JWTUtil.\+create\+Token (\begin{DoxyParamCaption}\item[{String}]{sub }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create TOKEN 
+\begin{DoxyParams}{Parameters}
+{\em sub} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a58919fecc4c8763ebae16f8e1f58e9a7}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a58919fecc4c8763ebae16f8e1f58e9a7}} 
+\index{com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}!isNeedUpdate@{isNeedUpdate}}
+\index{isNeedUpdate@{isNeedUpdate}!com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}}
+\doxysubsubsection{\texorpdfstring{isNeedUpdate()}{isNeedUpdate()}}
+{\footnotesize\ttfamily static boolean com.\+wecareinsurance.\+jwt.\+JWTUtil.\+is\+Need\+Update (\begin{DoxyParamCaption}\item[{String}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if token need update. 
+\begin{DoxyParams}{Parameters}
+{\em token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result true of false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a7842ffd73a78ad97a69e28355f368210}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a7842ffd73a78ad97a69e28355f368210}} 
+\index{com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}!setExpireTime@{setExpireTime}}
+\index{setExpireTime@{setExpireTime}!com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}}
+\doxysubsubsection{\texorpdfstring{setExpireTime()}{setExpireTime()}}
+{\footnotesize\ttfamily void com.\+wecareinsurance.\+jwt.\+JWTUtil.\+set\+Expire\+Time (\begin{DoxyParamCaption}\item[{int}]{expire\+Time\+Int }\end{DoxyParamCaption})}
+
+set token expire\+Time\+Int 
+\begin{DoxyParams}{Parameters}
+{\em expire\+Time\+Int} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a77b30cacf9c24171921203c3f3fbff19}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a77b30cacf9c24171921203c3f3fbff19}} 
+\index{com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}!setHeader@{setHeader}}
+\index{setHeader@{setHeader}!com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}}
+\doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}}
+{\footnotesize\ttfamily void com.\+wecareinsurance.\+jwt.\+JWTUtil.\+set\+Header (\begin{DoxyParamCaption}\item[{String}]{header }\end{DoxyParamCaption})}
+
+set token header 
+\begin{DoxyParams}{Parameters}
+{\em header} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a3227cfdceb0882a0a8d6059897efe163}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a3227cfdceb0882a0a8d6059897efe163}} 
+\index{com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}!setSecret@{setSecret}}
+\index{setSecret@{setSecret}!com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}}
+\doxysubsubsection{\texorpdfstring{setSecret()}{setSecret()}}
+{\footnotesize\ttfamily void com.\+wecareinsurance.\+jwt.\+JWTUtil.\+set\+Secret (\begin{DoxyParamCaption}\item[{String}]{secret }\end{DoxyParamCaption})}
+
+set token secret 
+\begin{DoxyParams}{Parameters}
+{\em secret} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_aab409f52c1733834a2bd50887a8d14f5}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_aab409f52c1733834a2bd50887a8d14f5}} 
+\index{com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}!setTokenPrefix@{setTokenPrefix}}
+\index{setTokenPrefix@{setTokenPrefix}!com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}}
+\doxysubsubsection{\texorpdfstring{setTokenPrefix()}{setTokenPrefix()}}
+{\footnotesize\ttfamily void com.\+wecareinsurance.\+jwt.\+JWTUtil.\+set\+Token\+Prefix (\begin{DoxyParamCaption}\item[{String}]{token\+Prefix }\end{DoxyParamCaption})}
+
+set token Prefix 
+\begin{DoxyParams}{Parameters}
+{\em token\+Prefix} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a1ff7b0385eb8657ce9b3bc7ee1e9cb03}\label{classcom_1_1wecareinsurance_1_1jwt_1_1_j_w_t_util_a1ff7b0385eb8657ce9b3bc7ee1e9cb03}} 
+\index{com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}!validateToken@{validateToken}}
+\index{validateToken@{validateToken}!com.wecareinsurance.jwt.JWTUtil@{com.wecareinsurance.jwt.JWTUtil}}
+\doxysubsubsection{\texorpdfstring{validateToken()}{validateToken()}}
+{\footnotesize\ttfamily static String com.\+wecareinsurance.\+jwt.\+JWTUtil.\+validate\+Token (\begin{DoxyParamCaption}\item[{String}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+validate token 
+\begin{DoxyParams}{Parameters}
+{\em token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of token 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/wecareinsurance/jwt/JWTUtil.\+java\end{DoxyCompactItemize}

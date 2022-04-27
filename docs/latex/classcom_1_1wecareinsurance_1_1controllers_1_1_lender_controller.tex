@@ -1,0 +1,97 @@
+\hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller}{}\doxysection{com.\+wecareinsurance.\+controllers.\+Lender\+Controller Class Reference}
+\label{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller}\index{com.wecareinsurance.controllers.LenderController@{com.wecareinsurance.controllers.LenderController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a0260c730754d8f3a391ab132a96fd738}{create\+Lender}} (Http\+Session session, @Request\+Body \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1models_1_1_lender}{Lender}} l)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a3313cfedc0baa5a3437d85d7da8672e2}{get\+Lender}} ()  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a04489135a66742ffc218d2baac60d624}{get\+Customer\+By\+Id}} (@Path\+Variable String id)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a88c621fb1155d9ab4755b41993cee5a1}{get\+By\+UId}} (Http\+Session session)  throws Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a0260c730754d8f3a391ab132a96fd738}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a0260c730754d8f3a391ab132a96fd738}} 
+\index{com.wecareinsurance.controllers.LenderController@{com.wecareinsurance.controllers.LenderController}!createLender@{createLender}}
+\index{createLender@{createLender}!com.wecareinsurance.controllers.LenderController@{com.wecareinsurance.controllers.LenderController}}
+\doxysubsubsection{\texorpdfstring{createLender()}{createLender()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+controllers.\+Lender\+Controller.\+create\+Lender (\begin{DoxyParamCaption}\item[{Http\+Session}]{session,  }\item[{@Request\+Body \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1models_1_1_lender}{Lender}}}]{l }\end{DoxyParamCaption}) throws Exception}
+
+create lender method 
+\begin{DoxyParams}{Parameters}
+{\em Lender} & with inputs from front end \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+create lender method from Lender\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a88c621fb1155d9ab4755b41993cee5a1}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a88c621fb1155d9ab4755b41993cee5a1}} 
+\index{com.wecareinsurance.controllers.LenderController@{com.wecareinsurance.controllers.LenderController}!getByUId@{getByUId}}
+\index{getByUId@{getByUId}!com.wecareinsurance.controllers.LenderController@{com.wecareinsurance.controllers.LenderController}}
+\doxysubsubsection{\texorpdfstring{getByUId()}{getByUId()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+controllers.\+Lender\+Controller.\+get\+By\+UId (\begin{DoxyParamCaption}\item[{Http\+Session}]{session }\end{DoxyParamCaption}) throws Exception}
+
+get specific lender by user\textquotesingle{}s id 
+\begin{DoxyParams}{Parameters}
+{\em session} & to store user\textquotesingle{}s id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+get lender by uid method from Lender\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a04489135a66742ffc218d2baac60d624}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a04489135a66742ffc218d2baac60d624}} 
+\index{com.wecareinsurance.controllers.LenderController@{com.wecareinsurance.controllers.LenderController}!getCustomerById@{getCustomerById}}
+\index{getCustomerById@{getCustomerById}!com.wecareinsurance.controllers.LenderController@{com.wecareinsurance.controllers.LenderController}}
+\doxysubsubsection{\texorpdfstring{getCustomerById()}{getCustomerById()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+controllers.\+Lender\+Controller.\+get\+Customer\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id }\end{DoxyParamCaption}) throws Exception}
+
+get specific lender by his/her id 
+\begin{DoxyParams}{Parameters}
+{\em lender} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+get lender by id method from Lender\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a3313cfedc0baa5a3437d85d7da8672e2}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_lender_controller_a3313cfedc0baa5a3437d85d7da8672e2}} 
+\index{com.wecareinsurance.controllers.LenderController@{com.wecareinsurance.controllers.LenderController}!getLender@{getLender}}
+\index{getLender@{getLender}!com.wecareinsurance.controllers.LenderController@{com.wecareinsurance.controllers.LenderController}}
+\doxysubsubsection{\texorpdfstring{getLender()}{getLender()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+controllers.\+Lender\+Controller.\+get\+Lender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+get every lender from DB 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+get lender method from Lender\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/wecareinsurance/controllers/Lender\+Controller.\+java\end{DoxyCompactItemize}

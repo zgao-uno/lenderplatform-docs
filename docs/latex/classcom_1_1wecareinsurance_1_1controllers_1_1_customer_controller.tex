@@ -1,0 +1,245 @@
+\hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller}{}\doxysection{com.\+wecareinsurance.\+controllers.\+Customer\+Controller Class Reference}
+\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller}\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_af5d141d03e34dfd4c26a900d920dc5e0}{create\+Customer}} (Http\+Session session, @Path\+Variable String lid, @Request\+Body \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1models_1_1_customer}{Customer}} c)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a821a15561fd9bd42ef1b564953886cc8}{get\+Customer}} ()  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a53847026bd51a54be254a5b393a36c37}{get\+Customer\+By\+Id}} (@Path\+Variable String id)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a9a39d7fd870a6deb40dc13ce1f0f9251}{get\+Customer\+By\+UId}} (Http\+Session session)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a515c755dff9e6b06f19dc644a0d67f95}{get\+Pending}} (Http\+Session session)  throws Exception 
+\item 
+List$<$ Hash\+Map$<$ String, Object $>$ $>$ \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a022853d4eadb80721903956a2095812c}{get\+Customer\+By\+Vin}} (@Path\+Variable String vin)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a84863fed66593b31d7f2c4c0b3a8aaad}{delete\+Customer}} (@Path\+Variable String id)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a95391d50651b7613be2d1ec969fe1891}{update\+Customer}} (@Path\+Variable String id, @Request\+Body \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1models_1_1_customer}{Customer}} c)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a0fd86ffc8aef51737955629dcef01d89}{update\+Customer\+Status}} (@Path\+Variable String id, @Path\+Variable String type)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a4366b8fcba15489eae90e6da6d990d1c}{update\+Customer\+Date}} (@Path\+Variable String id, @Path\+Variable Date date)  throws Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a6e64e8452f7c145955aeb568b802968e}{send\+Email}} (@Path\+Variable String name, @Path\+Variable String email, @Path\+Variable String id)  throws Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+customer controller class 
+\begin{DoxyParams}{Parameters}
+{\em Customer\+Dao} & cd dao from customer dao \\
+\hline
+{\em Lender\+Form\+Service} & lfs services \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_af5d141d03e34dfd4c26a900d920dc5e0}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_af5d141d03e34dfd4c26a900d920dc5e0}} 
+\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}!createCustomer@{createCustomer}}
+\index{createCustomer@{createCustomer}!com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsubsection{\texorpdfstring{createCustomer()}{createCustomer()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+controllers.\+Customer\+Controller.\+create\+Customer (\begin{DoxyParamCaption}\item[{Http\+Session}]{session,  }\item[{@Path\+Variable String}]{lid,  }\item[{@Request\+Body \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1models_1_1_customer}{Customer}}}]{c }\end{DoxyParamCaption}) throws Exception}
+
+create customer method 
+\begin{DoxyParams}{Parameters}
+{\em Customer} & with inputs from front end \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+create customer method from Customer\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a84863fed66593b31d7f2c4c0b3a8aaad}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a84863fed66593b31d7f2c4c0b3a8aaad}} 
+\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}!deleteCustomer@{deleteCustomer}}
+\index{deleteCustomer@{deleteCustomer}!com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsubsection{\texorpdfstring{deleteCustomer()}{deleteCustomer()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+controllers.\+Customer\+Controller.\+delete\+Customer (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id }\end{DoxyParamCaption}) throws Exception}
+
+delete customer method 
+\begin{DoxyParams}{Parameters}
+{\em Customer} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+delete customer method from Customer\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a821a15561fd9bd42ef1b564953886cc8}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a821a15561fd9bd42ef1b564953886cc8}} 
+\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}!getCustomer@{getCustomer}}
+\index{getCustomer@{getCustomer}!com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsubsection{\texorpdfstring{getCustomer()}{getCustomer()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+controllers.\+Customer\+Controller.\+get\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+get every customer from DB 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+get customer method from Customer\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a53847026bd51a54be254a5b393a36c37}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a53847026bd51a54be254a5b393a36c37}} 
+\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}!getCustomerById@{getCustomerById}}
+\index{getCustomerById@{getCustomerById}!com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsubsection{\texorpdfstring{getCustomerById()}{getCustomerById()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+controllers.\+Customer\+Controller.\+get\+Customer\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id }\end{DoxyParamCaption}) throws Exception}
+
+get specific customer by his/her id 
+\begin{DoxyParams}{Parameters}
+{\em customer} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+get customer by id method from Customer\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a9a39d7fd870a6deb40dc13ce1f0f9251}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a9a39d7fd870a6deb40dc13ce1f0f9251}} 
+\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}!getCustomerByUId@{getCustomerByUId}}
+\index{getCustomerByUId@{getCustomerByUId}!com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsubsection{\texorpdfstring{getCustomerByUId()}{getCustomerByUId()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+controllers.\+Customer\+Controller.\+get\+Customer\+By\+UId (\begin{DoxyParamCaption}\item[{Http\+Session}]{session }\end{DoxyParamCaption}) throws Exception}
+
+get specific customer by user\textquotesingle{}s id 
+\begin{DoxyParams}{Parameters}
+{\em session} & to store user\textquotesingle{}s id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+get customer by uid method from Customer\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a022853d4eadb80721903956a2095812c}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a022853d4eadb80721903956a2095812c}} 
+\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}!getCustomerByVin@{getCustomerByVin}}
+\index{getCustomerByVin@{getCustomerByVin}!com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsubsection{\texorpdfstring{getCustomerByVin()}{getCustomerByVin()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+controllers.\+Customer\+Controller.\+get\+Customer\+By\+Vin (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{vin }\end{DoxyParamCaption}) throws Exception}
+
+get specific customer by his/her vin, used for checking exist of customer before adding into DB 
+\begin{DoxyParams}{Parameters}
+{\em customer} & vin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+get customer by vin method from Customer\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a515c755dff9e6b06f19dc644a0d67f95}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a515c755dff9e6b06f19dc644a0d67f95}} 
+\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}!getPending@{getPending}}
+\index{getPending@{getPending}!com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsubsection{\texorpdfstring{getPending()}{getPending()}}
+{\footnotesize\ttfamily List$<$ Hash\+Map$<$ String, Object $>$ $>$ com.\+wecareinsurance.\+controllers.\+Customer\+Controller.\+get\+Pending (\begin{DoxyParamCaption}\item[{Http\+Session}]{session }\end{DoxyParamCaption}) throws Exception}
+
+get pending customer which has status with F \begin{DoxyReturn}{Returns}
+get pending method from Customer\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a6e64e8452f7c145955aeb568b802968e}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a6e64e8452f7c145955aeb568b802968e}} 
+\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}!sendEmail@{sendEmail}}
+\index{sendEmail@{sendEmail}!com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsubsection{\texorpdfstring{sendEmail()}{sendEmail()}}
+{\footnotesize\ttfamily void com.\+wecareinsurance.\+controllers.\+Customer\+Controller.\+send\+Email (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{name,  }\item[{@Path\+Variable String}]{email,  }\item[{@Path\+Variable String}]{id }\end{DoxyParamCaption}) throws Exception}
+
+send email if customer created without policy 
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a95391d50651b7613be2d1ec969fe1891}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a95391d50651b7613be2d1ec969fe1891}} 
+\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}!updateCustomer@{updateCustomer}}
+\index{updateCustomer@{updateCustomer}!com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsubsection{\texorpdfstring{updateCustomer()}{updateCustomer()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+controllers.\+Customer\+Controller.\+update\+Customer (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id,  }\item[{@Request\+Body \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1models_1_1_customer}{Customer}}}]{c }\end{DoxyParamCaption}) throws Exception}
+
+update customer method 
+\begin{DoxyParams}{Parameters}
+{\em customer} & id, Customer with inputs from front end \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+update customer method from Customer\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a4366b8fcba15489eae90e6da6d990d1c}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a4366b8fcba15489eae90e6da6d990d1c}} 
+\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}!updateCustomerDate@{updateCustomerDate}}
+\index{updateCustomerDate@{updateCustomerDate}!com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsubsection{\texorpdfstring{updateCustomerDate()}{updateCustomerDate()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+controllers.\+Customer\+Controller.\+update\+Customer\+Date (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id,  }\item[{@Path\+Variable Date}]{date }\end{DoxyParamCaption}) throws Exception}
+
+update customer date method 
+\begin{DoxyParams}{Parameters}
+{\em id} & customer id \\
+\hline
+{\em date} & policy date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+update customer date method from Customer\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a0fd86ffc8aef51737955629dcef01d89}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_customer_controller_a0fd86ffc8aef51737955629dcef01d89}} 
+\index{com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}!updateCustomerStatus@{updateCustomerStatus}}
+\index{updateCustomerStatus@{updateCustomerStatus}!com.wecareinsurance.controllers.CustomerController@{com.wecareinsurance.controllers.CustomerController}}
+\doxysubsubsection{\texorpdfstring{updateCustomerStatus()}{updateCustomerStatus()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+controllers.\+Customer\+Controller.\+update\+Customer\+Status (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id,  }\item[{@Path\+Variable String}]{type }\end{DoxyParamCaption}) throws Exception}
+
+update customer status method 
+\begin{DoxyParams}{Parameters}
+{\em id} & customer id \\
+\hline
+{\em type} & status type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+update customer status method from Customer\+Dao 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/wecareinsurance/controllers/Customer\+Controller.\+java\end{DoxyCompactItemize}

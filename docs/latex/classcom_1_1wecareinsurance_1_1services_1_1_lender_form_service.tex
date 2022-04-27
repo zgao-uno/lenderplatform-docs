@@ -1,0 +1,123 @@
+\hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service}{}\doxysection{com.\+wecareinsurance.\+services.\+Lender\+Form\+Service Class Reference}
+\label{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service}\index{com.wecareinsurance.services.LenderFormService@{com.wecareinsurance.services.LenderFormService}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_a1741f82dc33a56734cb2dbf5743c8304}{validate\+Address}} (String address1, String address2, String city, String state, String zip)  throws Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_aa6f8cf8462538ae513062ac4c2d5d005}{validate\+Vin}} (String vin)  throws Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_af943903faf7a5b819b448884e4ef6433}{validate\+Email}} (String email)  throws Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_a5f6647578a78d952965128598ce7c575}{send\+Email}} (String name, String email, String id)  throws Exception 
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final Pattern \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_acae7b89389505929a4060baa341fb1ee}{VALID\+\_\+\+EMAIL\+\_\+\+ADDRESS\+\_\+\+REGEX}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides services to handle requests for the Dealership Form. These services include verifying addresses, verifying VIN numbers, verifying email addresses, etc.
+
+\begin{DoxyAuthor}{Author}
+Dominic Fernandez 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_a5f6647578a78d952965128598ce7c575}\label{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_a5f6647578a78d952965128598ce7c575}} 
+\index{com.wecareinsurance.services.LenderFormService@{com.wecareinsurance.services.LenderFormService}!sendEmail@{sendEmail}}
+\index{sendEmail@{sendEmail}!com.wecareinsurance.services.LenderFormService@{com.wecareinsurance.services.LenderFormService}}
+\doxysubsubsection{\texorpdfstring{sendEmail()}{sendEmail()}}
+{\footnotesize\ttfamily void com.\+wecareinsurance.\+services.\+Lender\+Form\+Service.\+send\+Email (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{String}]{email,  }\item[{String}]{id }\end{DoxyParamCaption}) throws Exception}
+
+send email to customer 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of customer to be appeared in email \\
+\hline
+{\em email} & The email to be sent to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if fails \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_a1741f82dc33a56734cb2dbf5743c8304}\label{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_a1741f82dc33a56734cb2dbf5743c8304}} 
+\index{com.wecareinsurance.services.LenderFormService@{com.wecareinsurance.services.LenderFormService}!validateAddress@{validateAddress}}
+\index{validateAddress@{validateAddress}!com.wecareinsurance.services.LenderFormService@{com.wecareinsurance.services.LenderFormService}}
+\doxysubsubsection{\texorpdfstring{validateAddress()}{validateAddress()}}
+{\footnotesize\ttfamily void com.\+wecareinsurance.\+services.\+Lender\+Form\+Service.\+validate\+Address (\begin{DoxyParamCaption}\item[{String}]{address1,  }\item[{String}]{address2,  }\item[{String}]{city,  }\item[{String}]{state,  }\item[{String}]{zip }\end{DoxyParamCaption}) throws Exception}
+
+Validates address using the {\ttfamily \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1services_1_1_address}{Address}}} service class 
+\begin{DoxyParams}{Parameters}
+{\em address1} & \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1services_1_1_address}{Address}} line 1 \\
+\hline
+{\em address2} & \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1services_1_1_address}{Address}} line 2 \\
+\hline
+{\em city} & City \\
+\hline
+{\em state} & State \\
+\hline
+{\em zip} & Zip \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if address is invalid \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_af943903faf7a5b819b448884e4ef6433}\label{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_af943903faf7a5b819b448884e4ef6433}} 
+\index{com.wecareinsurance.services.LenderFormService@{com.wecareinsurance.services.LenderFormService}!validateEmail@{validateEmail}}
+\index{validateEmail@{validateEmail}!com.wecareinsurance.services.LenderFormService@{com.wecareinsurance.services.LenderFormService}}
+\doxysubsubsection{\texorpdfstring{validateEmail()}{validateEmail()}}
+{\footnotesize\ttfamily void com.\+wecareinsurance.\+services.\+Lender\+Form\+Service.\+validate\+Email (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption}) throws Exception}
+
+Validates the email address using regex 
+\begin{DoxyParams}{Parameters}
+{\em email} & The email to validate \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if email is invalid \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_aa6f8cf8462538ae513062ac4c2d5d005}\label{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_aa6f8cf8462538ae513062ac4c2d5d005}} 
+\index{com.wecareinsurance.services.LenderFormService@{com.wecareinsurance.services.LenderFormService}!validateVin@{validateVin}}
+\index{validateVin@{validateVin}!com.wecareinsurance.services.LenderFormService@{com.wecareinsurance.services.LenderFormService}}
+\doxysubsubsection{\texorpdfstring{validateVin()}{validateVin()}}
+{\footnotesize\ttfamily void com.\+wecareinsurance.\+services.\+Lender\+Form\+Service.\+validate\+Vin (\begin{DoxyParamCaption}\item[{String}]{vin }\end{DoxyParamCaption}) throws Exception}
+
+Validates vin using the {\ttfamily \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1services_1_1_verify_v_i_n}{Verify\+VIN}}} class 
+\begin{DoxyParams}{Parameters}
+{\em vin} & The vin number to validate \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws if vin number is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_acae7b89389505929a4060baa341fb1ee}\label{classcom_1_1wecareinsurance_1_1services_1_1_lender_form_service_acae7b89389505929a4060baa341fb1ee}} 
+\index{com.wecareinsurance.services.LenderFormService@{com.wecareinsurance.services.LenderFormService}!VALID\_EMAIL\_ADDRESS\_REGEX@{VALID\_EMAIL\_ADDRESS\_REGEX}}
+\index{VALID\_EMAIL\_ADDRESS\_REGEX@{VALID\_EMAIL\_ADDRESS\_REGEX}!com.wecareinsurance.services.LenderFormService@{com.wecareinsurance.services.LenderFormService}}
+\doxysubsubsection{\texorpdfstring{VALID\_EMAIL\_ADDRESS\_REGEX}{VALID\_EMAIL\_ADDRESS\_REGEX}}
+{\footnotesize\ttfamily final Pattern com.\+wecareinsurance.\+services.\+Lender\+Form\+Service.\+VALID\+\_\+\+EMAIL\+\_\+\+ADDRESS\+\_\+\+REGEX\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            Pattern.compile(\textcolor{stringliteral}{"{}\string^[A-\/Z0-\/9.\_\%+-\/]+@[A-\/Z0-\/9.-\/]+\(\backslash\)\(\backslash\).[A-\/Z]\{2,6\}\$"{}}, Pattern.CASE\_INSENSITIVE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/wecareinsurance/services/Lender\+Form\+Service.\+java\end{DoxyCompactItemize}

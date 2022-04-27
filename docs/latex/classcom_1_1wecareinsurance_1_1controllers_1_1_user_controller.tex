@@ -1,0 +1,120 @@
+\hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller}{}\doxysection{com.\+wecareinsurance.\+controllers.\+User\+Controller Class Reference}
+\label{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller}\index{com.wecareinsurance.controllers.UserController@{com.wecareinsurance.controllers.UserController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a593b260519a2277cbe958a83ba1098a6}{User\+Controller}} ()  throws SQLException, Class\+Not\+Found\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_ae2df9d8635a7cf3d156919b9ffb60f4b}{login}} (Http\+Session session, @Request\+Param Map$<$ String, Object $>$ params)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a728f452f62c5a09383154ca5409bf844}{register}} (@Request\+Param Map$<$ String, String $>$ params)  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a1fbc157045b5356b3baffe03cafcbfca}{profile}} (Http\+Session session, @Request\+Param Map$<$ String, String $>$ params)  throws Exception 
+\item 
+Map \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a61b4aec50e960802ce8cd09802b703a9}{user\+Info}} (Http\+Session session)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+\+: Zekun Gao Class of user\+Controller 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a593b260519a2277cbe958a83ba1098a6}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a593b260519a2277cbe958a83ba1098a6}} 
+\index{com.wecareinsurance.controllers.UserController@{com.wecareinsurance.controllers.UserController}!UserController@{UserController}}
+\index{UserController@{UserController}!com.wecareinsurance.controllers.UserController@{com.wecareinsurance.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{UserController()}{UserController()}}
+{\footnotesize\ttfamily com.\+wecareinsurance.\+controllers.\+User\+Controller.\+User\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws SQLException, Class\+Not\+Found\+Exception}
+
+constructor of \mbox{\hyperlink{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller}{User\+Controller}} 
+\begin{DoxyExceptions}{Exceptions}
+{\em SQLException} & \\
+\hline
+{\em Class\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_ae2df9d8635a7cf3d156919b9ffb60f4b}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_ae2df9d8635a7cf3d156919b9ffb60f4b}} 
+\index{com.wecareinsurance.controllers.UserController@{com.wecareinsurance.controllers.UserController}!login@{login}}
+\index{login@{login}!com.wecareinsurance.controllers.UserController@{com.wecareinsurance.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+controllers.\+User\+Controller.\+login (\begin{DoxyParamCaption}\item[{Http\+Session}]{session,  }\item[{@Request\+Param Map$<$ String, Object $>$}]{params }\end{DoxyParamCaption}) throws Exception}
+
+Login function 
+\begin{DoxyParams}{Parameters}
+{\em session} & session that contain login user information \\
+\hline
+{\em params} & information that input on front page \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+redirect page 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a1fbc157045b5356b3baffe03cafcbfca}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a1fbc157045b5356b3baffe03cafcbfca}} 
+\index{com.wecareinsurance.controllers.UserController@{com.wecareinsurance.controllers.UserController}!profile@{profile}}
+\index{profile@{profile}!com.wecareinsurance.controllers.UserController@{com.wecareinsurance.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{profile()}{profile()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+controllers.\+User\+Controller.\+profile (\begin{DoxyParamCaption}\item[{Http\+Session}]{session,  }\item[{@Request\+Param Map$<$ String, String $>$}]{params }\end{DoxyParamCaption}) throws Exception}
+
+Update the login user\textquotesingle{}s information 
+\begin{DoxyParams}{Parameters}
+{\em session} & session session that contain login user information \\
+\hline
+{\em params} & information that input on front page \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+redirect page 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a728f452f62c5a09383154ca5409bf844}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a728f452f62c5a09383154ca5409bf844}} 
+\index{com.wecareinsurance.controllers.UserController@{com.wecareinsurance.controllers.UserController}!register@{register}}
+\index{register@{register}!com.wecareinsurance.controllers.UserController@{com.wecareinsurance.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily String com.\+wecareinsurance.\+controllers.\+User\+Controller.\+register (\begin{DoxyParamCaption}\item[{@Request\+Param Map$<$ String, String $>$}]{params }\end{DoxyParamCaption}) throws Exception}
+
+Register function 
+\begin{DoxyParams}{Parameters}
+{\em params} & information that input on front page \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uid for User that just create 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a61b4aec50e960802ce8cd09802b703a9}\label{classcom_1_1wecareinsurance_1_1controllers_1_1_user_controller_a61b4aec50e960802ce8cd09802b703a9}} 
+\index{com.wecareinsurance.controllers.UserController@{com.wecareinsurance.controllers.UserController}!userInfo@{userInfo}}
+\index{userInfo@{userInfo}!com.wecareinsurance.controllers.UserController@{com.wecareinsurance.controllers.UserController}}
+\doxysubsubsection{\texorpdfstring{userInfo()}{userInfo()}}
+{\footnotesize\ttfamily Map com.\+wecareinsurance.\+controllers.\+User\+Controller.\+user\+Info (\begin{DoxyParamCaption}\item[{Http\+Session}]{session }\end{DoxyParamCaption})}
+
+return current login user\textquotesingle{}s information 
+\begin{DoxyParams}{Parameters}
+{\em session} & session session that contain login user information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+map that contain information 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/wecareinsurance/controllers/User\+Controller.\+java\end{DoxyCompactItemize}
